@@ -12,6 +12,6 @@ export abstract class Shape {
   abstract toString(): string;
 
   origin(): string {
-    return `The position is: xOrigin: ${this.xOrigin}, yOrigin: ${this.yOrigin}.`;
+    return `Its position is: xOrigin: ${this.xOrigin}, yOrigin: ${this.yOrigin}.`;
   }
 }

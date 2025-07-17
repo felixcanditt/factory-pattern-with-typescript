@@ -1,7 +1,7 @@
 import { ShapeFactory } from './ShapeFactory';
 
 function main() {
-  const newCircle = ShapeFactory.createShape('circle', 1, 2, 3);
+  const newCircle = ShapeFactory.createCircle('circle', 1, 2, 3);
   console.log(
     newCircle.toString(),
     newCircle.origin(),
@@ -9,6 +9,16 @@ function main() {
     newCircle.returnArea(),
     'Circumference:',
     newCircle.returnCircumference()
+  );
+
+  const newRectangle = ShapeFactory.createRectangle('rectangle', 1, 2, 3, 4);
+  console.log(
+    newRectangle.toString(),
+    newRectangle.origin(),
+    'Area:',
+    newRectangle.returnArea(),
+    'Circumference:',
+    newRectangle.returnCircumference()
   );
 }
 

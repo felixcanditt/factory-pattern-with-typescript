@@ -1,23 +1,25 @@
 import { Shape } from './Shape';
 
-export class Circle extends Shape {
-  private radius: number;
+export class Rectangle extends Shape {
+  private width: number;
+  private height: number;
   private area: number;
   private circumference: number;
 
-  constructor(xOrigin: number, yOrigin: number, radius: number) {
+  constructor(xOrigin: number, yOrigin: number, width: number, height: number) {
     super(xOrigin, yOrigin);
-    this.radius = radius;
+    this.width = width;
+    this.height = height;
     this.area = this.calculateArea();
     this.circumference = this.calculateCircumference();
   }
 
   private calculateArea(): number {
-    return this.radius * this.radius * 3.14159;
+    return this.width * this.height;
   }
 
   private calculateCircumference(): number {
-    return 2 * this.radius * 3.14159;
+    return 2 * (this.width + this.height);
   }
 
   returnArea(): number {
@@ -29,6 +31,6 @@ export class Circle extends Shape {
   }
 
   toString(): string {
-    return `This circle has an area of ${this.area} and a circumference of ${this.circumference}.`;
+    return `This rectangle has an area of ${this.area} and a circumference of ${this.circumference}.`;
   }
 }
