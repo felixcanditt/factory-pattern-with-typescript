@@ -1,13 +1,20 @@
 import { Shape } from './Shape';
 
+export interface CircleInterface {
+  typeString: 'circle';
+  x: number;
+  y: number;
+  r: number;
+}
+
 export class Circle extends Shape {
   private radius: number;
   private area: number;
   private circumference: number;
 
-  constructor(xOrigin: number, yOrigin: number, radius: number) {
-    super(xOrigin, yOrigin);
-    this.radius = radius;
+  constructor(circleSpecs: CircleInterface) {
+    super(circleSpecs.x, circleSpecs.y);
+    this.radius = circleSpecs.r;
     this.area = this.calculateArea();
     this.circumference = this.calculateCircumference();
   }
