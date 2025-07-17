@@ -8,8 +8,16 @@ export class Circle extends Shape {
   constructor(xOrigin: number, yOrigin: number, radius: number) {
     super(xOrigin, yOrigin);
     this.radius = radius;
-    this.area = this.radius * this.radius * 3.14159;
-    this.circumference = 2 * this.radius * 3.14159;
+    this.area = this.calculateArea(radius);
+    this.circumference = this.calculateCircumference(radius);
+  }
+
+  private calculateArea(radius: number): number {
+    return radius * radius * 3.14159;
+  }
+
+  private calculateCircumference(radius: number): number {
+    return 2 * this.radius * 3.14159;
   }
 
   returnArea(): number {
