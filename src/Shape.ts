@@ -1,4 +1,4 @@
-abstract class Shape {
+export abstract class Shape {
   protected xOrigin: number;
   protected yOrigin: number;
 
@@ -7,8 +7,8 @@ abstract class Shape {
     this.yOrigin = yOrigin;
   }
 
-  abstract area(): number;
-  abstract circumference(): number;
+  abstract calculateArea(): number;
+  abstract calculateCircumference(): number;
   abstract toString(): string;
 
   origin(): string {
