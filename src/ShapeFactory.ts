@@ -1,7 +1,8 @@
 import { Circle } from './Circle';
 
 export class ShapeFactory {
-  static createShape() {
-    return new Circle(3, 67, 8);
+  static createShape(typeString: string, x: number, y: number, r: number) {
+    console.log(1, typeString);
+    return new Circle(x, y, r);
   }
 }
