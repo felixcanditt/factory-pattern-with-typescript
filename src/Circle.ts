@@ -1,6 +1,6 @@
 import { Shape } from './Shape';
 
-class Circle extends Shape {
+export class Circle extends Shape {
   private radius: number;
   private area: number;
   private circumference: number;

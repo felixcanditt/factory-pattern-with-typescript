@@ -7,8 +7,8 @@ export abstract class Shape {
     this.yOrigin = yOrigin;
   }
 
-  abstract calculateArea(): number;
-  abstract calculateCircumference(): number;
+  abstract returnArea(): number;
+  abstract returnCircumference(): number;
   abstract toString(): string;
 
   origin(): string {
