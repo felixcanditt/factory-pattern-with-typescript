@@ -1,6 +1,6 @@
 export abstract class Shape {
-  protected xOrigin: number;
-  protected yOrigin: number;
+  private xOrigin: number;
+  private yOrigin: number;
 
   constructor(xOrigin: number, yOrigin: number) {
     this.xOrigin = xOrigin;

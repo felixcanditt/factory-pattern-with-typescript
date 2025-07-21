@@ -11,6 +11,8 @@ export class Square extends Rectangle {
   }
 
   toString(): string {
-    return `This square has an area of ${this.area} and a circumference of ${this.circumference}.`;
+    const area = super.getPrivateArea;
+    const circumference = super.getPrivateCircumference;
+    return `This square has an area of ${area} and a circumference of ${circumference}.`;
   }
 }

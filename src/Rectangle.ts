@@ -16,8 +16,8 @@ export interface RectangleInterface extends RectangleSquareInterface {
 export class Rectangle extends Shape {
   private width: number;
   private height: number;
-  protected area: number;
-  protected circumference: number;
+  private area: number;
+  private circumference: number;
 
   constructor(rectangleSpecs: RectangleInterface | SquareInterface) {
     super(rectangleSpecs.xOrigin, rectangleSpecs.yOrigin);
@@ -45,5 +45,13 @@ export class Rectangle extends Shape {
 
   toString(): string {
     return `This rectangle has an area of ${this.area} and a circumference of ${this.circumference}.`;
+  }
+
+  get getPrivateArea() {
+    return this.area;
+  }
+
+  get getPrivateCircumference() {
+    return this.circumference;
   }
 }
