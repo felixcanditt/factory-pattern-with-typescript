@@ -2,6 +2,7 @@ import { Circle } from './Circle';
 import { CircleInterface } from './Circle';
 import { Rectangle } from './Rectangle';
 import { RectangleInterface } from './Rectangle';
+import { Square } from './Square';
 
 export class ShapeFactory {
   static createShape(
