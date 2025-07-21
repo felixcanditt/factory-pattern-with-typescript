@@ -12,6 +12,7 @@ export class ShapeFactory {
     } else if (shapeSpecs.typeString === 'rectangle') {
       return new Rectangle(shapeSpecs);
     } else {
+      // fallback if typeString isnt provided correctly
       return "typeString needs to be 'circle' or 'rectangle'";
     }
   }
