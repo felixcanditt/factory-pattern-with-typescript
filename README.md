@@ -10,4 +10,4 @@ While building this app, I practiced:
 
 - Clean and maintainable design patterns
 
-This project was created as part of my TypeScript training.
+This project was created as part of my TypeScript training and serves as an exercise in writing clear, extensible code.
