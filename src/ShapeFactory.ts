@@ -14,7 +14,7 @@ export class ShapeFactory {
       return new Square(shapeSpecs);
     } else {
       // fallback if typeString isnt provided correctly
-      return "typeString needs to be 'circle' or 'rectangle'";
+      return "typeString needs to be 'circle', 'rectangle' or 'square'";
     }
   }
 }
