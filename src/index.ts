@@ -3,9 +3,9 @@ import { ShapeFactory } from './ShapeFactory';
 function main() {
   const newCircle = ShapeFactory.createShape({
     typeString: 'circle',
-    x: 1,
-    y: 2,
-    r: 3,
+    xOrigin: 1,
+    yOrigin: 2,
+    radius: 3,
   });
   if (typeof newCircle != 'string') {
     console.log(
@@ -22,10 +22,10 @@ function main() {
 
   const newRectangle = ShapeFactory.createShape({
     typeString: 'rectangle',
-    x: 1,
-    y: 2,
-    w: 3,
-    h: 4,
+    xOrigin: 1,
+    yOrigin: 2,
+    width: 3,
+    height: 4,
   });
   if (typeof newRectangle != 'string') {
     console.log(

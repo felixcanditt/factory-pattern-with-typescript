@@ -2,10 +2,10 @@ import { Shape } from './Shape';
 
 export interface RectangleInterface {
   typeString: 'rectangle';
-  x: number;
-  y: number;
-  w: number;
-  h: number;
+  xOrigin: number;
+  yOrigin: number;
+  width: number;
+  height: number;
 }
 
 export class Rectangle extends Shape {
@@ -15,9 +15,9 @@ export class Rectangle extends Shape {
   private circumference: number;
 
   constructor(rectangleSpecs: RectangleInterface) {
-    super(rectangleSpecs.x, rectangleSpecs.y);
-    this.width = rectangleSpecs.w;
-    this.height = rectangleSpecs.h;
+    super(rectangleSpecs.xOrigin, rectangleSpecs.yOrigin);
+    this.width = rectangleSpecs.width;
+    this.height = rectangleSpecs.height;
     this.area = this.calculateArea();
     this.circumference = this.calculateCircumference();
   }
