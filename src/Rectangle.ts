@@ -20,7 +20,11 @@ export class Rectangle extends Shape {
   private circumference: number;
 
   constructor(rectangleSpecs: RectangleInterface | SquareInterface) {
-    super(rectangleSpecs.xOrigin, rectangleSpecs.yOrigin);
+    super(
+      rectangleSpecs.xOrigin,
+      rectangleSpecs.yOrigin,
+      rectangleSpecs.typeString
+    );
     this.width = rectangleSpecs.width;
     this.height = rectangleSpecs.height;
     this.area = this.calculateArea();

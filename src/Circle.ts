@@ -13,7 +13,7 @@ export class Circle extends Shape {
   private circumference: number;
 
   constructor(circleSpecs: CircleInterface) {
-    super(circleSpecs.xOrigin, circleSpecs.yOrigin);
+    super(circleSpecs.xOrigin, circleSpecs.yOrigin, circleSpecs.typeString);
     this.radius = circleSpecs.radius;
     this.area = this.calculateArea();
     this.circumference = this.calculateCircumference();
