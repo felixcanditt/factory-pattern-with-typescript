@@ -1,20 +1,7 @@
 import { Circle } from './Circle';
+import { CircleInterface } from './Circle';
 import { Rectangle } from './Rectangle';
-
-interface CircleInterface {
-  typeString: 'circle';
-  x: number;
-  y: number;
-  r: number;
-}
-
-interface RectangleInterface {
-  typeString: 'rectangle';
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-}
+import { RectangleInterface } from './Rectangle';
 
 export class ShapeFactory {
   static createShape(

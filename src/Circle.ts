@@ -1,6 +1,7 @@
 import { Shape } from './Shape';
 
 export interface CircleInterface {
+  typeString: 'circle';
   x: number;
   y: number;
   r: number;

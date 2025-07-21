@@ -1,6 +1,7 @@
 import { Shape } from './Shape';
 
 export interface RectangleInterface {
+  typeString: 'rectangle';
   x: number;
   y: number;
   w: number;
