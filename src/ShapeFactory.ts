@@ -1,7 +1,5 @@
-import { Circle } from './Circle';
-import { CircleInterface } from './Circle';
-import { Rectangle } from './Rectangle';
-import { RectangleInterface } from './Rectangle';
+import { Circle, CircleInterface } from './Circle';
+import { Rectangle, RectangleInterface } from './Rectangle';
 import { Square, SquareInterface } from './Square';
 
 export class ShapeFactory {

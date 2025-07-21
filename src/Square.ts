@@ -10,7 +10,7 @@ export class Square extends Rectangle {
     super(squareSpecs);
   }
 
-  // toString(): string {
-  //   return `This rectangle has an area of ${this.area} and a circumference of ${this.circumference}.`;
-  // }
+  toString(): string {
+    return `This square has an area of ${this.area} and a circumference of ${this.circumference}.`;
+  }
 }
