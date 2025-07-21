@@ -34,8 +34,4 @@ export class Circle extends Shape {
   returnCircumference(): number {
     return this.circumference;
   }
-
-  toString(): string {
-    return `This circle has an area of ${this.area} and a circumference of ${this.circumference}.`;
-  }
 }

@@ -47,10 +47,6 @@ export class Rectangle extends Shape {
     return this.circumference;
   }
 
-  toString(): string {
-    return `This rectangle has an area of ${this.area} and a circumference of ${this.circumference}.`;
-  }
-
   get getPrivateArea() {
     return this.area;
   }

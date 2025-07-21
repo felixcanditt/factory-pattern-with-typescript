@@ -38,16 +38,15 @@ function showResult(factoryResult: Circle | Rectangle | Square | string) {
   if (typeof factoryResult != 'string') {
     // ShapeFactory returns a string if typeString isn't provided correctly
     console.log(
-      // factoryResult.toString(),
-      // factoryResult.origin(),
-      // 'Area:',
-      // factoryResult.returnArea(),
-      // 'Circumference:',
-      // factoryResult.returnCircumference()
-      factoryResult.toAnotherString(
+      factoryResult.toString(
         factoryResult.returnArea(),
         factoryResult.returnCircumference()
-      )
+      ),
+      factoryResult.origin(),
+      'Area:',
+      factoryResult.returnArea(),
+      'Circumference:',
+      factoryResult.returnCircumference()
     );
   } else {
     console.log(factoryResult);
