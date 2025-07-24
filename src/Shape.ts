@@ -10,8 +10,8 @@ export abstract class Shape {
   private yOrigin: number;
   protected area: number;
   protected circumference: number;
-  abstract calculateArea(): number;
-  abstract calculateCircumference(): number;
+  protected abstract calculateArea(): number;
+  protected abstract calculateCircumference(): number;
 
   constructor(shapeSpecs: ShapeInterface) {
     this.typeString = shapeSpecs.typeString;
@@ -26,8 +26,6 @@ export abstract class Shape {
   }
 
   toString(): string {
-    return `This ${
-      this.typeString
-    } has an area of ${this.returnArea()} and a circumference of ${this.returnCircumference()}.`;
+    return `This ${this.typeString} has an area of ${this.area} and a circumference of ${this.circumference}.`;
   }
 }

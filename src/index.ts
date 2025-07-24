@@ -46,8 +46,8 @@ function showResult(factoryResult: Circle | Rectangle | Square): void {
     factoryResult.toString(),
     factoryResult.origin(),
     'Area:',
-    factoryResult.returnArea(),
+    factoryResult.calculateArea(),
     'Circumference:',
-    factoryResult.returnCircumference()
+    factoryResult.calculateCircumference()
   );
 }
