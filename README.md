@@ -14,4 +14,5 @@ While building this app, I practiced:
 
 - Encapsulation using get/set methods
 
-I developed this project as an exercise during my TypeScript training.
+I developed this project during my TypeScript training based on an exercise from my trainer. It’s my own implementation focusing on clean code.
+
