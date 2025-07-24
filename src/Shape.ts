@@ -1,12 +1,18 @@
+export interface ShapeInterface {
+  typeString: 'circle' | 'rectangle' | 'square';
+  xOrigin: number;
+  yOrigin: number;
+}
+
 export abstract class Shape {
+  private typeString: string;
   private xOrigin: number;
   private yOrigin: number;
-  private typeString: string;
 
-  constructor(xOrigin: number, yOrigin: number, typeString: string) {
-    this.xOrigin = xOrigin;
-    this.yOrigin = yOrigin;
-    this.typeString = typeString;
+  constructor(shapeSpecs: ShapeInterface) {
+    this.typeString = shapeSpecs.typeString;
+    this.xOrigin = shapeSpecs.xOrigin;
+    this.yOrigin = shapeSpecs.yOrigin;
   }
 
   abstract returnArea(): number;

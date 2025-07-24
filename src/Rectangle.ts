@@ -1,10 +1,7 @@
-import { Shape } from './Shape';
+import { Shape, ShapeInterface } from './Shape';
 import { SquareInterface } from './Square';
 
-export interface RectangleSquareInterface {
-  typeString: string;
-  xOrigin: number;
-  yOrigin: number;
+export interface RectangleSquareInterface extends ShapeInterface {
   width: number;
   height: number;
 }
@@ -20,11 +17,7 @@ export class Rectangle extends Shape {
   private circumference: number;
 
   constructor(rectangleSpecs: RectangleInterface | SquareInterface) {
-    super(
-      rectangleSpecs.xOrigin,
-      rectangleSpecs.yOrigin,
-      rectangleSpecs.typeString
-    );
+    super(rectangleSpecs);
     this.width = rectangleSpecs.width;
     this.height = rectangleSpecs.height;
     this.area = this.calculateArea();
