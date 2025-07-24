@@ -14,8 +14,10 @@ export class Rectangle extends Shape {
     super(rectangleSpecs);
     this.width = rectangleSpecs.width;
     this.height = rectangleSpecs.height;
-    this.area = this.calculateArea();
-    this.circumference = this.calculateCircumference();
+    this.calculateArea();
+    this.calculateCircumference();
+    // this.area = this.calculateArea();
+    // this.circumference = this.calculateCircumference();
   }
 
   calculateArea(): number {
