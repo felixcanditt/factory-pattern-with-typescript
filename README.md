@@ -10,6 +10,6 @@ While building this app, I practiced:
 
 - Clean and maintainable design patterns
 
-- Error handling
+- Error handling with try/catch
 
 This project was created as part of my TypeScript training and serves as an exercise in writing clear, extensible code.
