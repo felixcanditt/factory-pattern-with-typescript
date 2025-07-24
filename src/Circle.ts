@@ -22,12 +22,4 @@ export class Circle extends Shape {
   calculateCircumference(): number {
     return 2 * this.radius * 3.14159;
   }
-
-  returnArea(): number {
-    return this.area;
-  }
-
-  returnCircumference(): number {
-    return this.circumference;
-  }
 }

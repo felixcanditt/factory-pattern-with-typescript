@@ -25,20 +25,4 @@ export class Rectangle extends Shape {
   calculateCircumference(): number {
     return 2 * (this.width + this.height);
   }
-
-  returnArea(): number {
-    return this.area;
-  }
-
-  returnCircumference(): number {
-    return this.circumference;
-  }
-
-  // get getPrivateArea() {
-  //   return this.area;
-  // }
-
-  // get getPrivateCircumference() {
-  //   return this.circumference;
-  // }
 }
