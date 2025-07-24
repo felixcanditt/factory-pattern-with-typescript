@@ -5,7 +5,7 @@ import { Square } from './Square';
 
 main();
 
-function main() {
+function main(): void {
   const firstShape = ShapeFactory.createShape({
     typeString: 'circle',
     xOrigin: 1,
@@ -34,7 +34,7 @@ function main() {
   showResult(thirdShape);
 }
 
-function showResult(factoryResult: Circle | Rectangle | Square | string) {
+function showResult(factoryResult: Circle | Rectangle | Square | string): void {
   if (typeof factoryResult != 'string') {
     // ShapeFactory returns a string if typeString isn't provided correctly
     console.log(

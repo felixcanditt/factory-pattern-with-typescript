@@ -1,5 +1,4 @@
-import { Rectangle } from './Rectangle';
-import { RectangleSquareInterface } from './Rectangle';
+import { Rectangle, RectangleSquareInterface } from './Rectangle';
 
 export interface SquareInterface extends RectangleSquareInterface {
   typeString: 'square';

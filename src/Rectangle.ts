@@ -47,11 +47,11 @@ export class Rectangle extends Shape {
     return this.circumference;
   }
 
-  get getPrivateArea() {
-    return this.area;
-  }
+  // get getPrivateArea() {
+  //   return this.area;
+  // }
 
-  get getPrivateCircumference() {
-    return this.circumference;
-  }
+  // get getPrivateCircumference() {
+  //   return this.circumference;
+  // }
 }
