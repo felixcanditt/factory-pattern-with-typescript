@@ -18,11 +18,11 @@ export class Rectangle extends Shape {
     this.circumference = this.calculateCircumference();
   }
 
-  private calculateArea(): number {
+  calculateArea(): number {
     return this.width * this.height;
   }
 
-  private calculateCircumference(): number {
+  calculateCircumference(): number {
     return 2 * (this.width + this.height);
   }
 

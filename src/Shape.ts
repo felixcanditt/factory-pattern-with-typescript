@@ -10,6 +10,8 @@ export abstract class Shape {
   private yOrigin: number;
   protected area: number;
   protected circumference: number;
+  abstract calculateArea(): number;
+  abstract calculateCircumference(): number;
 
   constructor(shapeSpecs: ShapeInterface) {
     this.typeString = shapeSpecs.typeString;
@@ -18,9 +20,6 @@ export abstract class Shape {
     this.area = 0;
     this.circumference = 0;
   }
-
-  abstract returnArea(): number;
-  abstract returnCircumference(): number;
 
   origin(): string {
     return `Its position is: xOrigin: ${this.xOrigin}, yOrigin: ${this.yOrigin}.`;
