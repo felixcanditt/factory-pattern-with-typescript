@@ -16,15 +16,13 @@ export class Rectangle extends Shape {
     this.height = rectangleSpecs.height;
     this.calculateArea();
     this.calculateCircumference();
-    // this.area = this.calculateArea();
-    // this.circumference = this.calculateCircumference();
   }
 
-  calculateArea(): number {
-    return this.width * this.height;
+  calculateArea(): void {
+    this.setArea(this.width * this.height);
   }
 
-  calculateCircumference(): number {
-    return 2 * (this.width + this.height);
+  calculateCircumference(): void {
+    this.setCircumference(this.width + this.height);
   }
 }

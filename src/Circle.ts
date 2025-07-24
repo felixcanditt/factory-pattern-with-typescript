@@ -11,15 +11,15 @@ export class Circle extends Shape {
   constructor(circleSpecs: CircleInterface) {
     super(circleSpecs);
     this.radius = circleSpecs.radius;
-    this.area = this.calculateArea();
-    this.circumference = this.calculateCircumference();
+    this.calculateArea();
+    this.calculateCircumference();
   }
 
-  calculateArea(): number {
-    return this.radius * this.radius * 3.14159;
+  calculateArea(): void {
+    this.setArea(this.radius * this.radius * 3.14159);
   }
 
-  calculateCircumference(): number {
-    return 2 * this.radius * 3.14159;
+  calculateCircumference(): void {
+    this.setCircumference(2 * this.radius * 3.14159);
   }
 }

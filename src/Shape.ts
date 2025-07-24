@@ -8,10 +8,10 @@ export abstract class Shape {
   private typeString: string;
   private xOrigin: number;
   private yOrigin: number;
-  protected area: number;
-  protected circumference: number;
-  protected abstract calculateArea(): number;
-  protected abstract calculateCircumference(): number;
+  private area: number;
+  private circumference: number;
+  protected abstract calculateArea(): void;
+  protected abstract calculateCircumference(): void;
 
   constructor(shapeSpecs: ShapeInterface) {
     this.typeString = shapeSpecs.typeString;
@@ -19,6 +19,22 @@ export abstract class Shape {
     this.yOrigin = shapeSpecs.yOrigin;
     this.area = 0;
     this.circumference = 0;
+  }
+
+  getArea(): number {
+    return this.area;
+  }
+
+  setArea(newArea: number): void {
+    this.area = newArea;
+  }
+
+  getCircumference(): number {
+    return this.circumference;
+  }
+
+  setCircumference(newCircumference: number): void {
+    this.circumference = newCircumference;
   }
 
   origin(): string {
