@@ -22,7 +22,9 @@ export abstract class Shape {
     return `Its position is: xOrigin: ${this.xOrigin}, yOrigin: ${this.yOrigin}.`;
   }
 
-  toString(area: number, circumference: number): string {
-    return `This ${this.typeString} has an area of ${area} and a circumference of ${circumference}.`;
+  toString(): string {
+    return `This ${
+      this.typeString
+    } has an area of ${this.returnArea()} and a circumference of ${this.returnCircumference()}.`;
   }
 }

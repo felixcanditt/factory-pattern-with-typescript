@@ -43,10 +43,7 @@ function orderShape(
 
 function showResult(factoryResult: Circle | Rectangle | Square): void {
   console.log(
-    factoryResult.toString(
-      factoryResult.returnArea(),
-      factoryResult.returnCircumference()
-    ),
+    factoryResult.toString(),
     factoryResult.origin(),
     'Area:',
     factoryResult.returnArea(),
