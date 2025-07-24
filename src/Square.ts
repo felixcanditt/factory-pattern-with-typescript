@@ -1,12 +1,7 @@
-import { Rectangle } from './Rectangle';
-import { RectangleSquareInterface } from './Rectangle';
-
-export interface SquareInterface extends RectangleSquareInterface {
-  typeString: 'square';
-}
+import { Rectangle, RectangleSquareInterface } from './Rectangle';
 
 export class Square extends Rectangle {
-  constructor(squareSpecs: SquareInterface) {
+  constructor(squareSpecs: RectangleSquareInterface) {
     super(squareSpecs);
   }
 

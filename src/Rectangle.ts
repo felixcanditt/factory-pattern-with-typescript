@@ -1,16 +1,9 @@
-import { Shape } from './Shape';
-import { SquareInterface } from './Square';
+import { Shape, ShapeInterface } from './Shape';
 
-export interface RectangleSquareInterface {
-  typeString: string;
-  xOrigin: number;
-  yOrigin: number;
+export interface RectangleSquareInterface extends ShapeInterface {
+  typeString: 'rectangle' | 'square';
   width: number;
   height: number;
-}
-
-export interface RectangleInterface extends RectangleSquareInterface {
-  typeString: 'rectangle';
 }
 
 export class Rectangle extends Shape {
@@ -19,12 +12,8 @@ export class Rectangle extends Shape {
   private area: number;
   private circumference: number;
 
-  constructor(rectangleSpecs: RectangleInterface | SquareInterface) {
-    super(
-      rectangleSpecs.xOrigin,
-      rectangleSpecs.yOrigin,
-      rectangleSpecs.typeString
-    );
+  constructor(rectangleSpecs: RectangleSquareInterface) {
+    super(rectangleSpecs);
     this.width = rectangleSpecs.width;
     this.height = rectangleSpecs.height;
     this.area = this.calculateArea();
@@ -47,11 +36,11 @@ export class Rectangle extends Shape {
     return this.circumference;
   }
 
-  get getPrivateArea() {
-    return this.area;
-  }
+  // get getPrivateArea() {
+  //   return this.area;
+  // }
 
-  get getPrivateCircumference() {
-    return this.circumference;
-  }
+  // get getPrivateCircumference() {
+  //   return this.circumference;
+  // }
 }
