@@ -8,11 +8,15 @@ export abstract class Shape {
   private typeString: string;
   private xOrigin: number;
   private yOrigin: number;
+  protected area: number;
+  protected circumference: number;
 
   constructor(shapeSpecs: ShapeInterface) {
     this.typeString = shapeSpecs.typeString;
     this.xOrigin = shapeSpecs.xOrigin;
     this.yOrigin = shapeSpecs.yOrigin;
+    this.area = 0;
+    this.circumference = 0;
   }
 
   abstract returnArea(): number;

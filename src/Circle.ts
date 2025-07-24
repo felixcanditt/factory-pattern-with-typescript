@@ -7,8 +7,6 @@ export interface CircleInterface extends ShapeInterface {
 
 export class Circle extends Shape {
   private radius: number;
-  private area: number;
-  private circumference: number;
 
   constructor(circleSpecs: CircleInterface) {
     super(circleSpecs);

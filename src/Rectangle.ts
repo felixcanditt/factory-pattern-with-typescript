@@ -9,8 +9,6 @@ export interface RectangleSquareInterface extends ShapeInterface {
 export class Rectangle extends Shape {
   private width: number;
   private height: number;
-  private area: number;
-  private circumference: number;
 
   constructor(rectangleSpecs: RectangleSquareInterface) {
     super(rectangleSpecs);
