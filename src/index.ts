@@ -26,7 +26,7 @@ function main(): void {
     xOrigin: 9,
     yOrigin: 4,
     width: 6,
-    height: 8,
+    height: 6,
   });
 }
 

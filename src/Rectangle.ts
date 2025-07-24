@@ -23,6 +23,6 @@ export class Rectangle extends Shape {
   }
 
   calculateCircumference(): void {
-    this.setCircumference(this.width + this.height);
+    this.setCircumference(2 * (this.width + this.height));
   }
 }
