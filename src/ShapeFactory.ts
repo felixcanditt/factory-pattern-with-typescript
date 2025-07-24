@@ -1,10 +1,10 @@
 import { Circle, CircleInterface } from './Circle';
-import { Rectangle, RectangleInterface } from './Rectangle';
-import { Square, SquareInterface } from './Square';
+import { Rectangle, RectangleSquareInterface } from './Rectangle';
+import { Square } from './Square';
 
 export class ShapeFactory {
   static createShape(
-    shapeSpecs: CircleInterface | RectangleInterface | SquareInterface
+    shapeSpecs: CircleInterface | RectangleSquareInterface
   ): Circle | Rectangle | Square {
     if (shapeSpecs.typeString === 'circle') {
       return new Circle(shapeSpecs);

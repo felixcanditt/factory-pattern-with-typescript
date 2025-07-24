@@ -1,7 +1,7 @@
 import { ShapeFactory } from './ShapeFactory';
 import { Circle, CircleInterface } from './Circle';
-import { Rectangle, RectangleInterface } from './Rectangle';
-import { Square, SquareInterface } from './Square';
+import { Rectangle, RectangleSquareInterface } from './Rectangle';
+import { Square } from './Square';
 
 main();
 
@@ -31,7 +31,7 @@ function main(): void {
 }
 
 function orderShape(
-  shapeSpecs: CircleInterface | RectangleInterface | SquareInterface
+  shapeSpecs: CircleInterface | RectangleSquareInterface
 ): void {
   try {
     const newShape = ShapeFactory.createShape(shapeSpecs);
