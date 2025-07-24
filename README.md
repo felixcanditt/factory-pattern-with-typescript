@@ -10,6 +10,8 @@ While building this app, I practiced:
 
 - Clean and maintainable design patterns
 
-- Error handling with try/catch
+- Error handling with try/catch and custom error messages
 
-This project was created as part of my TypeScript training and serves as an exercise in writing clear, extensible code.
+- Encapsulation using get/set methods
+
+I developed this project as an exercise during my TypeScript training.
